@@ -197,3 +197,7 @@ Source references are automatically included and displayed in expandable section
 ```bash
 python notebook/evaluater.py
 ```
+## 📹 Demo Video
+
+[Watch the Demo Video]
+https://drive.google.com/file/d/1NW8nX2k05ALY1qMVwazgxy0NsE0XHUyb/view?usp=sharing
