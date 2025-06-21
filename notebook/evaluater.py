@@ -7,10 +7,7 @@ import time
 from difflib import SequenceMatcher
 
 def evaluate_rag_system():
-    """
-    Simple Q&A matching evaluation - compares generated response with expected answer
-    """
-    
+  
     # Test questions with realistic expected answers from eBay User Agreement
     test_cases = [
         {
