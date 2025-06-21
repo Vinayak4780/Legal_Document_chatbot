@@ -8,7 +8,6 @@ from nltk.tokenize import sent_tokenize
 import nltk
 
 def sentence_aware_chunking(text, chunk_size=300):
-    """Create sentence-aware chunks from text."""
     chunks, current_chunk, word_count = [], [], 0
     for sentence in sent_tokenize(text):
         sentence_words = len(sentence.split())
@@ -31,7 +30,6 @@ def sentence_aware_chunking(text, chunk_size=300):
     return chunks
 
 def create_vectorstore():
-    """Create a new FAISS vectorstore from the document."""
     # Load and preprocess the document
     text_path = os.path.join("data", "AI Training Document.pdf")
     
