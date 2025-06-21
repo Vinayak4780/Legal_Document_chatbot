@@ -156,35 +156,6 @@ Open your browser to `http://localhost:8501`
 - **Memory**: Efficient storage format
 - **Integration**: Seamless LangChain compatibility
 
-## 💡 Usage Examples
-
-### Sample Queries:
-
-1. **Privacy Policies**:
-   ```
-   "What data does the company collect from users?"
-   "How long is personal data retained?"
-   ```
-
-2. **Terms & Conditions**:
-   ```
-   "What are the termination conditions?"
-   "What payment methods are accepted?"
-   ```
-
-3. **Legal Contracts**:
-   ```
-   "What are the liability limitations?"
-   "How are disputes resolved?"
-   ```
-
-### Expected Response Format:
-```
-Based on the provided legal context, [detailed answer with formal language].
-
-Source references are automatically included and displayed in expandable sections below the response.
-```
-
 ## 🧪 Evaluation & Testing
 
 ### Metrics (`notebook/evaluater.py`):
