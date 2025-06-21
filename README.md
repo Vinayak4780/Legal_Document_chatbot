@@ -197,26 +197,3 @@ Source references are automatically included and displayed in expandable section
 ```bash
 python notebook/evaluater.py
 ```
-
-## 🛠️ Development & Customization
-
-### Adding New Documents:
-1. Place PDF in `data/` folder
-2. Update `create_vectordb.py` with new file path
-3. Run: `python create_vectordb.py`
-4. Restart the Streamlit app
-
-### Modifying Prompts:
-Edit the prompt templates in:
-- `src/retrival.py` (line 14-25)
-
-### Changing Models:
-Update model names in:
-- `src/generator.py` (line 12)
-- `create_vectordb.py` (line 33)
-## 📈 Performance Metrics
-
-### Typical Response Times:
-- **Retrieval**: ~100-200ms
-- **Generation**: ~500-1000ms (via Groq)
-- **Total**: ~1-2 seconds end-to-end
