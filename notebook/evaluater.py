@@ -24,15 +24,15 @@ def evaluate_rag_system():
         }
     ]
     
-    print("🏛️  Legal Document RAG System Evaluation")
+    print("Legal Document RAG System Evaluation")
     print("=" * 50)
     
     total_score = 0
     detailed_results = []
     
     for i, test_case in enumerate(test_cases, 1):
-        print(f"\n📋 Test Case {i}")
-        print(f"❓ Question: {test_case['question']}")
+        print(f"\nTest Case {i}")
+        print(f"Question: {test_case['question']}")
         
         # Measure response time
         start_time = time.time()
@@ -49,11 +49,11 @@ def evaluate_rag_system():
             similarity_score = calculate_similarity(generated_answer, test_case['expected_answer'])
             total_score += similarity_score
             
-            print(f"🤖 Generated Answer: {generated_answer[:150]}...")
-            print(f"✅ Expected Answer: {test_case['expected_answer'][:150]}...")
-            print(f"📊 Similarity Score: {similarity_score:.2f}/10")
-            print(f"⏱️  Response Time: {response_time:.2f}s")
-            print(f"📄 Sources Retrieved: {len(sources)}")
+            print(f"Generated Answer: {generated_answer[:150]}...")
+            print(f"Expected Answer: {test_case['expected_answer'][:150]}...")
+            print(f"Similarity Score: {similarity_score:.2f}/10")
+            print(f"Response Time: {response_time:.2f}s")
+            print(f"Sources Retrieved: {len(sources)}")
             
             # Store detailed results
             detailed_results.append({
@@ -66,7 +66,7 @@ def evaluate_rag_system():
             })
             
         except Exception as e:
-            print(f"❌ Error: {str(e)}")
+            print(f"Error: {str(e)}")
             detailed_results.append({
                 "question": test_case['question'],
                 "error": str(e),
@@ -77,17 +77,17 @@ def evaluate_rag_system():
     avg_score = total_score / len(test_cases)
     
     print("\n" + "=" * 50)
-    print("📈 EVALUATION SUMMARY")
+    print("EVALUATION SUMMARY")
     print("=" * 50)
-    print(f"🎯 Overall Average Similarity Score: {avg_score:.2f}/10")
-    print(f"📊 Performance Grade: {get_performance_grade(avg_score)}")
+    print(f"Overall Average Similarity Score: {avg_score:.2f}/10")
+    print(f"Performance Grade: {get_performance_grade(avg_score)}")
     
     # Performance breakdown
     successful_queries = len([r for r in detailed_results if 'error' not in r])
     avg_response_time = sum(r.get('response_time', 0) for r in detailed_results if 'response_time' in r) / max(successful_queries, 1)
     
-    print(f"⚡ Average Response Time: {avg_response_time:.2f}s")
-    print(f"✅ Successful Queries: {successful_queries}/{len(test_cases)}")
+    print(f"Average Response Time: {avg_response_time:.2f}s")
+    print(f"Successful Queries: {successful_queries}/{len(test_cases)}")
     
     return detailed_results, avg_score
 
@@ -162,7 +162,7 @@ def get_performance_grade(score):
         return "D (Poor)"
 
 if __name__ == "__main__":
-    print("🚀 Starting RAG System Evaluation...")
+    print(" Starting RAG System Evaluation...")
     results, avg_score = evaluate_rag_system()
     
-    print(f"\n🎉 Evaluation Complete! Average Score: {avg_score:.2f}/10")
+    print(f"\n Evaluation Complete! Average Score: {avg_score:.2f}/10")
