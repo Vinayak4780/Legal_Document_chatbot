@@ -1,0 +1,26 @@
+# Core Dependencies
+streamlit
+python-dotenv
+
+# LangChain and Related
+langchain
+langchain-community
+langchain-huggingface
+langchain-core
+
+# LLM and Embeddings
+groq
+sentence-transformers
+
+# Vector Database
+faiss-cpu
+
+# Text Processing
+nltk
+PyPDF2
+
+# Data Processing
+pickle5
+
+# Evaluation 
+ragas

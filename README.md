@@ -298,5 +298,3 @@ For issues or questions:
 ---
 
 **Built with ❤️ for legal document AI assistance**
-#   L e g a l _ D o c u m e n t _ c h a t b o t  
- 
