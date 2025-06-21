@@ -9,7 +9,7 @@ This project implements a complete RAG pipeline using:
 - **Vector Database**: FAISS for semantic search
 - **Embeddings**: BGE-large-en-v1.5 for high-quality document embeddings
 - **Interface**: Streamlit with real-time streaming responses
-- **Evaluation**: RAGAS metrics for RAG quality assessment
+- **Evaluation**: Sequence Matcher for metrics for RAG quality assessment
 
 ## 📁 Project Structure
 
@@ -187,7 +187,7 @@ Source references are automatically included and displayed in expandable section
 
 ## 🧪 Evaluation & Testing
 
-### RAGAS Metrics (`notebook/evaluater.py`):
+### Metrics (`notebook/evaluater.py`):
 - **Faithfulness**: Answer grounding in source documents
 - **Answer Relevancy**: Response relevance to query
 - **Context Precision**: Retrieved chunk quality
